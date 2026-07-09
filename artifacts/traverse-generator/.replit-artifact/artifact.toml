@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "Traverse Field Notes Generator"
+version = "1.0.0"
+id = "artifacts/traverse-generator"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24052
+
+[services.development]
+run = "pnpm --filter @workspace/traverse-generator run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/traverse-generator", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/traverse-generator/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24052"
+BASE_PATH = "/"

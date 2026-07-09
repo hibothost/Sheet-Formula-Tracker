@@ -1,0 +1,2 @@
+- [Excel ATAN2 argument order](excel-atan2-argument-order.md) — Excel's ATAN2(x,y) matches standard atan2(y,x); don't "fix" bearing formulas by swapping args without checking this first.
+- [Survey field-note placeholder data](survey-field-note-placeholders.md) — never fabricate field-measured values (check angles, corrections); use clearly flagged defaults or ask the user.

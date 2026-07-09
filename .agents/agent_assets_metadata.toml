@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "Cb-6NMJK5huGl8cvVTqPF"
+uri = "file://attached_assets/kimbugwe_field_notes_fixed.xlsx"
+type = "table"
+title = "Field notes — fixed (CM14–CM43 restored)"
